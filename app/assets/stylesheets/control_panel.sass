@@ -12,11 +12,11 @@
     //justify-content: space-between
     .logo
       width: 250px
-      background-color: $black
+      background-color: $red
       text-align: center
       code
         margin: 0
-        color: $red
+        color: $bluegrey
         font:
           size: 2em
           //family: $round
@@ -25,7 +25,8 @@
         letter-spacing: .2em
         line-height: 5
         padding: 0
-    .sidebar
+    nav.sidebar
+      margin-top: 20px
       li
         font:
           family: $round
@@ -36,11 +37,14 @@
         padding: 10px 0
         border-bottom: 1px solid $black
         a
-          color: $grey
+          display: block
+          color: $bluegrey
           padding-left: 20px
-          //transition: all .2s ease-in-out
+          transform: none
+          transition: all .2s ease-in-out
           &:hover
             color: $white
+            transform: matrix(1,0.05,0,1,0,0)
     .footer
       position: fixed
       padding-left: 20px
@@ -48,11 +52,11 @@
       h6
         font:
           family: $square
-          size: .7em
+          size: .5em
         text-transform: uppercase
         a
-          color: $teal
-
-          transition: ease-in-out .2s
+          display: block
+          color: $bluegrey
+          transition: ease-in-out .4s
           &:hover
-            color: darken($grey, 50%)
+            color: $white
