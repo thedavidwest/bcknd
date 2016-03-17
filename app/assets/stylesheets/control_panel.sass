@@ -1,0 +1,58 @@
+.page_wrap .control_panel
+  width: 250px
+  z-index: 20
+  background-color: tint($black, 10%)
+  .control_panel_position
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 10px
+    display: flex
+    flex-direction: column
+    //justify-content: space-between
+    .logo
+      width: 250px
+      background-color: $black
+      text-align: center
+      code
+        margin: 0
+        color: $red
+        font:
+          size: 2em
+          //family: $round
+          //weight: 100
+        //text-transform: uppercase
+        letter-spacing: .2em
+        line-height: 5
+        padding: 0
+    .sidebar
+      li
+        font:
+          family: $round
+          weight: 100
+          size: .8em
+        list-style: none
+        letter-spacing: .2em
+        padding: 10px 0
+        border-bottom: 1px solid $black
+        a
+          color: $grey
+          padding-left: 20px
+          //transition: all .2s ease-in-out
+          &:hover
+            color: $white
+    .footer
+      position: fixed
+      padding-left: 20px
+      bottom: 10px
+      h6
+        font:
+          family: $square
+          size: .7em
+        text-transform: uppercase
+        a
+          color: $teal
+
+          transition: ease-in-out .2s
+          &:hover
+            color: darken($grey, 50%)
